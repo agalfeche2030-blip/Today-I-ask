@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Daily Question</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f8fb;
+      text-align: center;
+      padding: 60px;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    #question {
+      margin-top: 40px;
+      font-size: 1.4em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Daily Question</h1>
+  <p>Pause. Read. Reflect.</p>
+
+  <button onclick="newQuestion()">Show Today’s Question</button>
+
+  <div id="question"></div>
+
+  <script>
+    const questions = [
+      "What made you smile today?",
+      "What drained your energy recently?",
+      "What is something you’re grateful for right now?",
+      "What are you avoiding, and why?",
+      "What does your body need today?",
+      "What’s one small win you had this week?",
+      "What made today difficult?",
+      "What made today meaningful?",
+      "What emotion do you feel most often lately?",
+      "What do you need more of in your life?",
+      "What do you need less of?",
+      "What is something you’re proud of?",
+      "What is something you’re afraid to admit?",
+      "What are you holding onto that you should let go of?",
+      "What helps you feel calm?",
+      "When was the last time you felt at peace?",
+      "What motivates you to keep going?",
+      "What do you miss right now?",
+      "What are you excited about?",
+      "What makes you feel safe?",
+      "What does rest look like for you?",
+      "What does happiness mean to you today?",
+      "What is something you want to improve?",
+      "What have you learned recently?",
+      "What are you curious about?",
+      "What do you wish people understood about you?",
+      "What makes you feel understood?",
+      "What makes you feel overwhelmed?",
+      "What helps you feel grounded?",
+      "What habit would you like to build?",
+      "What habit would you like to break?",
+      "What are you thankful for in this moment?",
+      "What was the best part of your day?",
+      "What was the hardest part of your day?",
+      "What are you worried about right now?",
+      "What do you need reassurance about?",
+      "What makes you feel confident?",
+      "What makes you doubt yourself?",
+      "What do you want to say but haven’t?",
+      "What does success mean to you?",
+      "What does failure teach you?",
+      "What are you growing from?",
+      "What are you healing from?",
+      "What brings you comfort?",
+      "What brings you joy?",
+      "What do you need to forgive yourself for?",
+      "What do you want your future self to know?",
+      "What do you want more time for?",
+      "What do you spend too much time on?",
+      "What are you doing just for yourself?",
+      "What makes you feel alive?",
+      "What do you want to protect?",
+      "What do you want to change?",
+      "What do you want to keep the same?",
+      "What do you value most?",
+      "What makes you feel hopeful?",
+      "What makes you feel discouraged?",
+      "What are you learning to accept?",
+      "What do you need to hear today?",
+      "What makes you feel connected to others?",
+      "What makes you feel lonely?",
+      "What does self-care mean to you?",
+      "What do you need to slow down with?",
+      "What do you need to speed up with?",
+      "What boundary do you need right now?",
+      "What does balance look like for you?",
+      "What makes you feel creative?",
+      "What inspires you?",
+      "What calms your mind?",
+      "What excites your heart?",
+      "What are you thankful for about yourself?",
+      "What strength did you use today?",
+      "What would you tell your younger self?",
+      "What do you want to learn next?",
+      "What makes you feel supported?",
+      "What do you want to improve tomorrow?",
+      "What does kindness look like today?",
+      "What makes you feel brave?",
+      "What does progress mean to you?",
+      "What are you becoming?",
+      "What do you want to release today?",
+      "What makes today worth remembering?",
+      "What do you want to carry into tomorrow?",
+      "What makes you feel at home?",
+      "What do you want to say thank you for?",
+      "What are you choosing for yourself today?"
+    ];
+
+    function newQuestion() {
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      document.getElementById("question").innerText = questions[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
